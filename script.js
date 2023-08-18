@@ -13,32 +13,32 @@ $(document).ready(function() {
     navMenu.css('height', menuHeight + 'px');
   }
 
-  // Function to close the navbar
-  function closeNavbar() {
-    navMenu.removeClass('active'); // Remove the "active" class from the navigation menu
-    hamburgerMenuIcon.removeClass('hidden'); // Show the hamburger menu icon
-    closeMenuIcon.addClass('hidden'); // Hide the close menu icon
+  // Function to toggle the navbar
+  function toggleNavbar() {
+    navMenu.toggleClass('active'); // Toggle the "active" class on the navigation menu
+
+    // Toggle the visibility of the hamburger and close menu icons
+    hamburgerMenuIcon.toggleClass('hidden');
+    closeMenuIcon.toggleClass('hidden');
   }
 
   // Add click event listener to the menu icon
   menuIcon.on('click', function() {
-    navMenu.toggleClass('active'); // Toggle the "active" class on the navigation menu
-    hamburgerMenuIcon.toggleClass('hidden'); // Toggle the visibility of the hamburger menu icon
-    closeMenuIcon.toggleClass('hidden'); // Toggle the visibility of the close menu icon
+    toggleNavbar(); // Call the function to toggle the navbar
   });
 
   // Add click event listener to menu links
   navMenu.find('a').on('click', function() {
-    closeNavbar(); // Call the function to close the navbar
+    toggleNavbar(); // Call the function to toggle the navbar
   });
 
   // Add click event listener to the logo
   $('.loopstudios_logo').on('click', function() {
-    closeNavbar(); // Call the function to close the navbar
+    toggleNavbar(); // Call the function to toggle the navbar
   });
-  
 
   // Set initial menu height
   setMenuHeight();
 });
+
 

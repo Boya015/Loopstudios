@@ -209,6 +209,8 @@
 
    button {
     order: 1;
+    text-transform: uppercase;
+    
    }
 
    .list_heading {
@@ -298,11 +300,20 @@
   
 
   button{
+    width: 120px;
     margin-left: 140px;
     margin-right: 140px;
     margin-top: 30px;
     margin-bottom: 60px;
-    padding: 8px;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: #fff;
+  }
+
+
+  button:hover {
+    background-color: #000;
+    color: #fff;
   }
 
   footer {
@@ -334,8 +345,20 @@
       display: none;
     }
 
+    .logo {
+      padding: 25px;
+    }
+
     picture {
      
+    }
+
+    .hero {
+    color: #fff;
+    margin-bottom: 34px;
+    margin-top: 115px;
+    border: 2px solid white;
+    padding: 9px 30px 20px 0px;
     }
 
     
