@@ -284,11 +284,11 @@
   }
 
   .grid_header {
-    margin-top: 100px;
+    margin-top: 50px;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 110px 0px 20px;
     font-weight: 300;
   }
 
