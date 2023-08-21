@@ -6,8 +6,7 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="script.js"></script> <!-- Add this line to link the JavaScript file -->
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Loopstudios landing page</title>
@@ -27,8 +26,14 @@
    <div class="Menu">
     <nav class="navbar">
       <div class="menu-icon">
-        <img class="hamburger_menu" src="images/icon-hamburger.svg" alt="icon hamburger menu">
-        <img class="close_menu hidden" src="images/icon-close.svg" alt="icon hamburger close menu">
+        <img class="close_menu" 
+             src="images/icon-close.svg" 
+             aria-hidden="true"
+             alt="icon hamburger close menu">
+        <img class="hamburger_menu" 
+             src="images/icon-hamburger.svg" 
+             alt="icon hamburger menu">
+       
       </div>
         <ul class="nav-menu">
           
@@ -69,28 +74,44 @@
 
   <div class="grid-section">
     <div class="deep_grid">
-      <h2 class="grid_header">Deep earth</h2>
+      <a class="link_grid"> 
+        <h2 class="grid_header">Deep earth</h2>
+      </a>
        </div>
     <div class="Night_grid">
-      <h2 class="grid_header">Night arcade</h2>
+      <a class="link_grid">
+        <h2 class="grid_header">Night arcade</h2>
+      </a>
        </div>
     <div class="soccer_grid">
+     <a class="link_grid">
       <h2 class="grid_header">Soccer team VR</h2>
+    </a> 
        </div>
     <div class="the_grid">
-      <h2 class="grid_header">The grid</h2>
+      <a class="link_grid">
+        <h2 class="grid_header">The grid</h2>
+      </a>
        </div>
     <div class="From_grid">
-      <h2 class="grid_header">From up above VR</h2>
+      <a class="link_grid">
+        <h2 class="grid_header">From up above VR</h2>
+      </a>
        </div>
     <div class="pocket_grid">
-      <h2 class="grid_header">Pocket borealis</h2>
+      <a class="link_grid">
+        <h2 class="grid_header">Pocket borealis</h2>
+      </a>
        </div>
     <div class="curiosity_grid">
+     <a class="link_grid">
       <h2 class="grid_header">The curiosity</h2>
+    </a> 
        </div>
     <div class="fisheye_grid">
-      <h2 class="grid_header">Make it fisheye</h2>
+      <a class="link_grid">
+        <h2 class="grid_header">Make it fisheye</h2>
+      </a>
        </div>
   </div>
   
@@ -107,9 +128,9 @@
   <p><a href="#">Support</a></p>
   <div class="logo_svg">
     <img class="facebook_logo" src="images/icon-facebook.svg" alt="Facebook svg logo">
-    <img class="facebook_logo" src="images/icon-twitter.svg" alt="twitter logo">
-    <img class="facebook_logo" src="images/icon-pinterest.svg" alt="pineterest svg logo">
-    <img class="facebook_logo" src="images/icon-instagram.svg" alt="instagram svg logo">
+    <img class="twitter_logo" src="images/icon-twitter.svg" alt="twitter logo">
+    <img class="pineterest" src="images/icon-pinterest.svg" alt="pineterest svg logo">
+    <img class="instagram_logo" src="images/icon-instagram.svg" alt="instagram svg logo">
   </div>
  <p>© 2021 Loopstudios. All rights reserved.</p> 
 </footer>
@@ -119,5 +140,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script> <!-- Add this line to link the JavaScript file -->
 </body>
 </html>

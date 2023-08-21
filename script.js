@@ -12,6 +12,7 @@ $(document).ready(function() {
     const menuHeight = numMenuItems * menuItemHeight;
     navMenu.css('height', menuHeight + 'px');
   }
+  
 
   // Function to toggle the navbar
   function toggleNavbar() {
@@ -19,7 +20,7 @@ $(document).ready(function() {
 
     // Toggle the visibility of the hamburger and close menu icons
     hamburgerMenuIcon.toggleClass('hidden');
-    closeMenuIcon.toggleClass('hidden');
+    closeMenuIcon.toggleClass('active');
   }
 
   // Add click event listener to the menu icon
