@@ -1,45 +1,57 @@
-$(document).ready(function() {
-  // Get references to the elements
-  const menuIcon = $('.menu-icon');
-  const navMenu = $('.nav-menu');
-  const hamburgerMenuIcon = menuIcon.find('.hamburger_menu');
-  const closeMenuIcon = menuIcon.find('.close_menu');
+ // Code inside here will be executed when the DOM is fully loaded and ready.
+$(document).ready(function() { 
+  const menuIcon = $('#menu-icon');
+  const navMenu = $('#nav-menu');
+  const hamburgerMenuIcon = menuIcon.find('#hamburger_menu');
+  const closeMenuIcon = menuIcon.find('#close_menu');
 
-  // Calculate and set the height of the menu dynamically
-  function setMenuHeight() {
-    const menuItemHeight = 180; // Adjust this value based on your design
-    const numMenuItems = navMenu.children().length;
-    const menuHeight = numMenuItems * menuItemHeight;
-    navMenu.css('height', menuHeight + 'px');
+
+  function checkViewportWidthAndSetMenuHeight() {
+    if (window.innerWidth < 768) {  // Code to set menu height for larger viewport
+      const menuItemHeight = 180; // Adjust this value based on your design
+      const numMenuItems = navMenu.children().length;
+      const menuHeight = numMenuItems * menuItemHeight;
+      navMenu.css('height', menuHeight + 'px');
+    } else {  // Code to reset menu height for smaller viewport
+      navMenu.css('height', ''); // Reset the menu height when viewport is smaller
+    }
   }
+
+
+  // This function toggles the appearance of the navigation menu. 
+  // It adds/removes classes to/from navMenu, hamburgerMenuIcon, 
+  // and closeMenuIcon elements to control their visibility and styling.
   
-
-  // Function to toggle the navbar
   function toggleNavbar() {
-    navMenu.toggleClass('active'); // Toggle the "active" class on the navigation menu
-
-    // Toggle the visibility of the hamburger and close menu icons
+    navMenu.toggleClass('active');
     hamburgerMenuIcon.toggleClass('hidden');
     closeMenuIcon.toggleClass('active');
   }
 
-  // Add click event listener to the menu icon
+  // These lines add event listeners to various elements on the page. 
+  // When the menuIcon is clicked, or a link inside navMenu is clicked, 
+  // or the element with class loopstudios_logo is clicked, 
+  // the toggleNavbar() function is called to toggle the navigation menu.
+
   menuIcon.on('click', function() {
-    toggleNavbar(); // Call the function to toggle the navbar
+    toggleNavbar();
   });
 
-  // Add click event listener to menu links
   navMenu.find('a').on('click', function() {
-    toggleNavbar(); // Call the function to toggle the navbar
+    toggleNavbar();
   });
 
-  // Add click event listener to the logo
   $('.loopstudios_logo').on('click', function() {
-    toggleNavbar(); // Call the function to toggle the navbar
+    toggleNavbar();
   });
 
-  // Set initial menu height
-  setMenuHeight();
+  // This code initially calls the checkViewportWidthAndSetMenuHeight
+  // () function to set the menu height based on the current viewport width. 
+  // It also adds an event listener to the window's resize event, 
+  // so whenever the window is resized, 
+  // the checkViewportWidthAndSetMenuHeight() 
+  // function is called again to update the menu height if necessary.
+
+  checkViewportWidthAndSetMenuHeight();
+  window.addEventListener('resize', checkViewportWidthAndSetMenuHeight);
 });
-
-
