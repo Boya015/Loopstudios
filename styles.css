@@ -454,9 +454,9 @@
 .grid-section {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Four columns */
-  grid-template-rows: repeat(2, 1fr);    /* Two rows */
+  grid-template-rows: repeat(2, 1fr) auto;    /* Two rows */
   gap: 25px; /* Adjust the gap as needed */
-  height: 65em;
+  height: auto;
 }
 
 .deep_grid {
