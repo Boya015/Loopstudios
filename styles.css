@@ -548,6 +548,7 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+    gap: 10px;
 }
 
 .footer_paragrapgh {
