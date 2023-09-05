@@ -373,17 +373,18 @@
     }
 
     .hero {
-    color: #fff;
-    margin-bottom: 14rem;
-    margin-top: 10rem;
-    border: 2px solid white;
-    margin-left: 20rem;
-    margin-right: 35rem;
+      color: #fff;
+      margin-bottom: 14rem;
+      margin-top: 10rem;
+      border: 2px solid white;
+      margin-left: 4rem;
+      margin-right: 35rem;
     }
 
     h1 {
+      margin-right: 75px;;
       margin-left: 3rem;
-      font-size: 50px;
+      font-size: 65px;
       font-family: 'Josefin Sans', sans-serif;
       text-transform: uppercase;
     }
