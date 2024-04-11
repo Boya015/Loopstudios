@@ -1,0 +1,40 @@
+/* Apply a box-sizing border-box model to all elements */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Remove default margin and padding from all elements */
+  body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dd, dt, figure, figcaption, blockquote, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Remove list styles and add some default styles */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove border and outline from all elements */
+  a, button, input, textarea {
+    border: none;
+    outline: none;
+  }
+  
+  /* Set some default styles */
+  body {
+    font-family: 'Alata', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Add some basic styles for headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+  }
+  
+  /* Add some basic styles for links */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
