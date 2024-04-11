@@ -4,9 +4,11 @@
   }
   
   /* Remove default margin and padding from all elements */
-  body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dd, dt, figure, figcaption, blockquote, pre, form, fieldset, legend, button, input, textarea, th, td {
+  * {
     margin: 0;
     padding: 0;
+    font-family: 'Alata', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
   }
   
   /* Remove list styles and add some default styles */
@@ -22,8 +24,7 @@
   
   /* Set some default styles */
   body {
-    font-family: 'Alata', sans-serif;
-    font-family: 'Josefin Sans', sans-serif;
+    
     font-family: Arial, sans-serif;
     line-height: 1.6;
   }

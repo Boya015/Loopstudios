@@ -60,6 +60,10 @@ button {
 
   }
 
+  .logo_svg img {
+  cursor: pointer;
+  }
+
   .attribution {
     display: none;
   }
