@@ -274,6 +274,10 @@ footer {
       font-family: 'Alata', sans-serif;
     }
 
+    #nav-menu li a:hover {
+      text-decoration: underline;
+    }
+
     #menu-icon {
       display: none;
     }
@@ -353,6 +357,9 @@ footer {
     margin-top: -26%;
     margin-right: 21%;
 }
+
+
+
 .list_heading {
   text-align: left;
   margin-top: 50px;
@@ -493,6 +500,10 @@ footer {
       font-family: 'Alata', sans-serif;
     }
 
+    #nav-menu li a:hover {
+      text-decoration: underline;
+    }
+
     #menu-icon {
       display: none;
     }
@@ -572,6 +583,12 @@ footer {
     margin-top: -26%;
     margin-right: 21%;
 }
+
+.info-div h3 {
+  margin-top: 35px;
+  text-align: center;
+}   
+
 .list_heading {
   text-align: left;
   margin-top: 50px;
